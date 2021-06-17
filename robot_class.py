@@ -92,8 +92,16 @@ class robot:
         measurements = []
         for l in range(self.num_landmarks):
             noise = self.rand() * self.measurement_noise
+
+            # in case landmark falls outside world, check next landmark
+            if 0 > self.landmarks[l][0] or self.landmarks[l][0] > self.world_size or \
+                    self.world_size < self.landmarks[l][1] or self.landmarks[l][1] < 0:
+                continue
+
             dx, dy = (self.x - self.landmarks[l][0]) + noise, (self.y - self.landmarks[l][1]) + noise
             distance = sqrt(dx**2 + dy**2)
+
+            # only add if distance is within measurement_range
             if distance <= self.measurement_range: measurements.append([l, dx, dy])
 
         ## TODO: return the final, complete list of measurements
