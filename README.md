@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# CV-SLAM
-Computer Vision SLAM example
-=======
 # Landmark Detection & Robot Tracking (SLAM)
 
 ## Project Overview
@@ -135,4 +131,3 @@ Alternatively, your submission could consist of only the **GitHub link** to your
 
 
 LICENSE: This project is licensed under the terms of the MIT license.
->>>>>>> 2c9ac98 (original files)
