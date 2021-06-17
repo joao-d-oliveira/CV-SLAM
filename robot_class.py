@@ -68,6 +68,7 @@ class robot:
     ## TODO: paste your complete the sense function, here
     ## make sure the indentation of the code is correct
     def sense(self):
+        from math import sqrt
         ''' This function does not take in any parameters, instead it references internal variables
             (such as self.landamrks) to measure the distance between the robot and any landmarks
             that the robot can see (that are within its measurement range).
@@ -77,8 +78,6 @@ class robot:
             One item in the returned list should be in the form: [landmark_index, dx, dy].
             '''
            
-        measurements = []
-        
         ## TODO: iterate through all of the landmarks in a world
         
         ## TODO: For each landmark
@@ -89,10 +88,16 @@ class robot:
         ## 3. If either of the distances, dx or dy, fall outside of the internal var, measurement_range
         ##    then we cannot record them; if they do fall in the range, then add them to the measurements list
         ##    as list.append([index, dx, dy]), this format is important for data creation done later
-        
+
+        measurements = []
+        for l in range(self.num_landmarks):
+            noise = self.rand() * self.measurement_noise
+            dx, dy = (self.x - self.landmarks[l][0]) + noise, (self.y - self.landmarks[l][1]) + noise
+            distance = sqrt(dx**2 + dy**2)
+            if distance <= self.measurement_range: measurements.append([l, dx, dy])
+
         ## TODO: return the final, complete list of measurements
         return measurements
-
 
     # --------
     # make_landmarks:
