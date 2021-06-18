@@ -4,7 +4,9 @@ Final project from 4th Section
 Original [GitHub project](https://github.com/udacity/P3_Implement_SLAM)
 
 # Aproach
-* TBC
+* Started by revisiting mostly the annotations from Lesson 7
+* Just followed step by step the instructions and rechecked, fixed some minor bugs here and there
+* At the end implemented 2 bonus questions regarding the plotting
 
 # Instructions
 
