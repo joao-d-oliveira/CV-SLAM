@@ -4,7 +4,9 @@ Final project from 4th Section
 Original [GitHub project](https://github.com/udacity/P3_Implement_SLAM)
 
 # Aproach
-* TBC
+* Started by revisiting mostly the annotations from Lesson 7
+* Just followed step by step the instructions and rechecked, fixed some minor bugs here and there
+* At the end implemented 2 bonus questions regarding the plotting
 
 # Instructions
 
@@ -18,7 +20,7 @@ The project will be broken up into three Python notebooks; the first two are for
 
 * :white_check_mark: __Notebook 1__ : Robot Moving and Sensing
 * :white_check_mark: __Notebook 2__ : Omega and Xi, Constraints 
-* :white_check_mark::exclamation: __Notebook 3__ : Landmark Detection and Tracking 
+* :white_check_mark: __Notebook 3__ : Landmark Detection and Tracking 
 
 ## Project Rubric [link_original](https://review.udacity.com/#!/rubrics/1427/view)
 
@@ -64,10 +66,7 @@ The project will be broken up into three Python notebooks; the first two are for
 | :white_check_mark:  Test your implementation of `slam`.  |  There are two provided test_data cases, test your implementation of slam on them and see if the result matches.|
 
 ## Bonus :boom::boom::boom:
-* :exclamation: Create a new version of `slam` in which `omega` only keeps track of the latest robot pose (you do not need all of them to implement `slam` correctly).
-* :exclamation: Add visualization code that creates a more realistic-looking display world
-* :exclamation: Create a non-random maze of landmarks and see how your implementation of `slam` performs
-* :exclamation: Display your robot world at every time step and stack these image frames to create a short video clip and to see how the robot localizes itself and builds up a model of the world over time
-* :exclamation: Take a look at an implementation of slam that uses reinforcement learning and probabilistic motion models, at this [Github link](https://github.com/devendrachaplot/Neural-Localization)
+* :white_check_mark: Add visualization code that creates a more realistic-looking display world
+* :white_check_mark: Display your robot world at every time step and stack these image frames to create a short video clip and to see how the robot localizes itself and builds up a model of the world over time
 
 LICENSE: This project is licensed under the terms of the MIT license.
