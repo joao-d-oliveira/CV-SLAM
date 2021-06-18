@@ -98,7 +98,8 @@ class robot:
                     self.world_size < self.landmarks[l][1] or self.landmarks[l][1] < 0:
                 continue
 
-            dx, dy = (self.x - self.landmarks[l][0]) + noise, (self.y - self.landmarks[l][1]) + noise
+            xLa, yLa = self.landmarks[l][0], self.landmarks[l][1]
+            dx, dy = xLa - self.x + noise, yLa - self.y + noise
             distance = sqrt(dx**2 + dy**2)
 
             # only add if distance is within measurement_range
@@ -106,6 +107,7 @@ class robot:
 
         ## TODO: return the final, complete list of measurements
         return measurements
+
 
     # --------
     # make_landmarks:
