@@ -18,7 +18,7 @@ The project will be broken up into three Python notebooks; the first two are for
 
 * :white_check_mark: __Notebook 1__ : Robot Moving and Sensing
 * :white_check_mark: __Notebook 2__ : Omega and Xi, Constraints 
-* :white_check_mark::exclamation: __Notebook 3__ : Landmark Detection and Tracking 
+* :white_check_mark: __Notebook 3__ : Landmark Detection and Tracking 
 
 ## Project Rubric [link_original](https://review.udacity.com/#!/rubrics/1427/view)
 
